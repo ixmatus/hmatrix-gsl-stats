@@ -95,7 +95,8 @@ library
     if flag(onlygsl)
       extra-libraries: gsl
     else
-      pkgconfig-depends: gsl, openblas
+      pkgconfig-depends: gsl
+      ghc-options: -optc-lgslcblas
 
 
 source-repository head
