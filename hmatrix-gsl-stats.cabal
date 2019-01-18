@@ -93,10 +93,9 @@ library
             cc-options: -fPIC
 
     if flag(onlygsl)
-      extra-libraries: gsl
+      extra-libraries: gsl gslcblas
     else
       pkgconfig-depends: gsl
-      ghc-options: -optc-lgslcblas
 
 
 source-repository head
